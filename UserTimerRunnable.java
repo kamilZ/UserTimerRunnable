@@ -3,14 +3,12 @@ public class UserTimerRunnable implements Runnable {
     private static final String TAG = "com.test";
     private long lastUsed;
     private long period;
-    private Context context;
     private Handler handler;
     private boolean stop;
     private long idle;
 
-    public UserTimerRunnable(long period, Context context, Handler handler) {
+    public UserTimerRunnable(long period, Handler handler) {
         this.period = period;
-        this.context = context;
         this.handler = handler;
         stop = false;
         lastUsed = System.currentTimeMillis();
