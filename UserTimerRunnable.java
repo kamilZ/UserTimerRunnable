@@ -24,7 +24,7 @@ public class UserTimerRunnable implements Runnable {
            //TODO your code here
            
             stop = true;
-            Log.d(TAG, "Finishing UserTimer thread");
+            Log.d(TAG, "Finishing UserTimerRunnable thread");
         } else {
             handler.postDelayed(this, 60*1000); //1m
         }
