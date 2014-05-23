@@ -15,7 +15,7 @@ Use it on your Application Controller. Add the class UserTimerRunnable, use this
 
 ```java
     Handler handler = new Handler();
-    UserTimerRunnable userTimer = new UserTimerRunnable(30 * 60 * 1000, handler); // 3m
+    UserTimerRunnable userTimer = new UserTimerRunnable(30 * 60 * 1000, handler); // 30m
     handler.postDelayed(userTimer, 1000);
 ```
  
